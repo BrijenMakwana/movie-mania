@@ -1,0 +1,10 @@
+.main-container{
+    padding: 10px;
+
+}
+
+.poster-image{
+    width: 180px;
+    border-radius: 5px;
+    cursor: pointer;
+}

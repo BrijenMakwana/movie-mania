@@ -1,0 +1,28 @@
+.category-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+}
+
+.show-title{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.show-collection{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #fff;
+    overflow: scroll;
+    height: 100%;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.show-collection::-webkit-scrollbar {
+    display: none;
+}
