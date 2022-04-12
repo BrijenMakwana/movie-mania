@@ -1,6 +1,7 @@
 
 import './App.css';
 import CategoryComponent from "./components/CategoryComponent";
+import BigPoster from "./components/BigPoster";
 
 
 function App() {
@@ -48,6 +49,7 @@ const apiRequests = [
 ];
   return (
     <div className="App">
+        <BigPoster/>
         {
             apiRequests.map((item)=>(
                 <CategoryComponent title={item.title} url={item.url} key={item.id}/>

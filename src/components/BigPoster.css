@@ -1,0 +1,28 @@
+.poster-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.big-poster{
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-title{
+    font-size: 3rem;
+    color: #fff;
+    margin-left: 20px;
+
+}
