@@ -13,7 +13,6 @@ function CategoryComponent(props) {
             .then( (response)=> {
                 // handle success
                 setPosters(response.data.results)
-                console.log(response.data.result)
             })
             .catch(function (error) {
                 // handle error
@@ -35,7 +34,7 @@ function CategoryComponent(props) {
             <div className="show-collection">
                 {
                     posters.map((item)=>(
-                        <ShowComponent image={`https://image.tmdb.org/t/p/w500${item.poster_path}`} key={item.id}/>
+                        <ShowComponent image={`https://image.tmdb.org/t/p/w500${item.poster_path}`} key={item.id} id={item.id} type={props.type}/>
                     ))
                 }
             </div>

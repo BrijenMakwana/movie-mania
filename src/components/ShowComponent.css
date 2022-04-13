@@ -7,4 +7,10 @@
     width: 180px;
     border-radius: 5px;
     cursor: pointer;
+    transition: transform 0.5s;
+}
+
+
+.poster-image:hover{
+    transform: scale(0.85);
 }

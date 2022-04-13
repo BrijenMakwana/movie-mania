@@ -13,7 +13,6 @@ const [title,setTitle] = useState("");
             .then( (response)=> {
                 // handle success
 
-                console.log(response.data.results);
                 setPoster(response.data.results[2].poster_path);
                 setTitle(response.data.results[2].title);
 

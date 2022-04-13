@@ -3,17 +3,17 @@ import './MovieScreen.css';
 import axios from "axios";
 import {useEffect, useState} from "react";
 import moment from "moment";
+import { useParams } from "react-router-dom";
 
 
 function MovieScreen() {
     const [movie, setMovie] = useState([]);
+    let {type,id} = useParams();
 
     const getShowData = () => {
-        axios.get("https://api.themoviedb.org/3/movie/634649?api_key=5855e9b9f4ec1fd91373dae25331f786&language=en-US")
+        axios.get(`https://api.themoviedb.org/3/${type}/${id}?api_key=5855e9b9f4ec1fd91373dae25331f786&language=en-US`)
             .then( (response)=> {
                 // handle success
-
-                console.log(response.data);
                 setMovie(response.data);
             })
             .catch(function (error) {
@@ -46,7 +46,9 @@ function MovieScreen() {
                     <h1 className="movie-title">{movie.title}</h1>
                     <p className="movie-description">{movie.overview}</p>
                     <h2 className="release-date">{moment(movie.release_date).format("MMM Do YY")}</h2>
-                    <h2 className="movie-runtime">{convertMinutesToHours(movie.runtime)} long</h2>
+                    {
+                        movie.runtime && <h2 className="movie-runtime">{convertMinutesToHours(movie.runtime)} Long</h2>
+                    }
                 </div>
 
 

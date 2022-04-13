@@ -2,15 +2,17 @@
 import './App.css';
 import HomeScreen from "./screens/HomeScreen";
 import MovieScreen from "./screens/MovieScreen";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 function App() {
   return (
-    <div className="App">
-        <MovieScreen/>
-        {/*<HomeScreen/>*/}
-
-    </div>
+      <BrowserRouter>
+          <Routes>
+              <Route path="/" element={<HomeScreen />} />
+              <Route path="/:type/:id" element={<MovieScreen />}/>
+          </Routes>
+      </BrowserRouter>
   );
 }
 
