@@ -13,7 +13,7 @@ function CategoryComponent(props) {
             .then( (response)=> {
                 // handle success
                 setPosters(response.data.results)
-
+                console.log(response.data.result)
             })
             .catch(function (error) {
                 // handle error
