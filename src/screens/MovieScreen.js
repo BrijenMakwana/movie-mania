@@ -2,6 +2,7 @@
 import './MovieScreen.css';
 import axios from "axios";
 import {useEffect, useState} from "react";
+import moment from "moment";
 
 
 function MovieScreen() {
@@ -24,6 +25,12 @@ function MovieScreen() {
             });
     }
 
+    const convertMinutesToHours = (minutes) => {
+        let hours = Math.floor(minutes / 60);
+        let minutesLeft = minutes % 60;
+        return `${hours}h ${minutesLeft}m`;
+    }
+
     useEffect(() => {
         getShowData();
     }, []);
@@ -33,12 +40,13 @@ function MovieScreen() {
         <div className="movie-container">
             <div className="movie-details">
                 <div className="left-container">
-                    <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="image" className="movie-poster"/>
+                    <img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} alt="image" className="movie-poster"/>
                 </div>
                 <div className="right-container">
                     <h1 className="movie-title">{movie.title}</h1>
                     <p className="movie-description">{movie.overview}</p>
-                    <h2 className="release-date">{movie.release_date}</h2>
+                    <h2 className="release-date">{moment(movie.release_date).format("MMM Do YY")}</h2>
+                    <h2 className="movie-runtime">{convertMinutesToHours(movie.runtime)} long</h2>
                 </div>
 
 
