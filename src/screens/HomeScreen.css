@@ -1,11 +1,12 @@
 .home-container {
     margin: 0;
     padding: 10px;
+    background-color: #000 !important;
 }
 
 *{
     box-sizing: border-box;
-    background-color: #000 !important;
+    /*background-color: #000 !important;*/
 
 }
 
