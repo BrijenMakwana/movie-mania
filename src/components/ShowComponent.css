@@ -1,6 +1,10 @@
 .main-container{
     padding: 10px;
     background-color: #000 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .poster-image{

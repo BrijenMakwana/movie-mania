@@ -7,8 +7,6 @@
 .movie-container {
     margin: 0;
     padding: 20px;
-
-
     width: 100%;
 
 }
@@ -23,14 +21,14 @@
 
 .left-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
 }
 
 .movie-poster{
-    width: 500px;
-
+    width: 50%;
 }
 
 .right-container{
@@ -46,9 +44,6 @@
     color: #fff;
     font-size: 3.5em;
     font-weight: bold;
-    margin: 0;
-    padding: 0;
-
 }
 
 .movie-description{
@@ -56,6 +51,11 @@
     font-size: 1.5em;
     margin-top: 20px;
     padding: 20px;
+}
+
+.movie-rating{
+    color: #fff;
+    font-size: 2em;
 }
 .release-date{
     color: #fff;
@@ -66,4 +66,12 @@
 .movie-runtime{
     color: #fff;
     font-size: 2em;
+}
+
+.show-video{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
