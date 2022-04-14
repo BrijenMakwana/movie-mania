@@ -4,6 +4,7 @@ import axios from "axios";
 import {useEffect, useState} from "react";
 import moment from "moment";
 import { useParams } from "react-router-dom";
+import { FcCalendar, FcClock } from "react-icons/fc";
 
 
 function MovieScreen() {
@@ -45,9 +46,10 @@ function MovieScreen() {
                 <div className="right-container">
                     <h1 className="movie-title">{movie.title}</h1>
                     <p className="movie-description">{movie.overview}</p>
-                    <h2 className="release-date">{moment(movie.release_date).format("MMM Do YY")}</h2>
+                    <h2 className="release-date"><FcCalendar/> {moment(movie.release_date).format("MMM Do YY")}</h2>
                     {
-                        movie.runtime && <h2 className="movie-runtime">{convertMinutesToHours(movie.runtime)} Long</h2>
+                        movie.runtime && <h2 className="movie-runtime"><FcClock/> {convertMinutesToHours(movie.runtime)}</h2>
+
                     }
                 </div>
 
