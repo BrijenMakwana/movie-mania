@@ -6,6 +6,19 @@
     margin: 0px;
     align-items: center;
     justify-content: space-between;
+    padding-top: 10px;
+}
+
+.header-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.app-logo{
+    width: 60px
 }
 
 .app-title{
