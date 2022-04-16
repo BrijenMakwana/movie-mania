@@ -6,11 +6,14 @@
 
 *{
     box-sizing: border-box;
-    /*background-color: #000 !important;*/
 
 }
 
-.App-link {
-    color: #61dafb;
+.result-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 

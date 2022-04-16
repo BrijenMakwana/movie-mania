@@ -17,7 +17,7 @@ function MovieScreen() {
             .then( (response)=> {
                 // handle success
                 setMovie(response.data);
-                console.log(response.data);
+
             })
             .catch(function (error) {
                 // handle error
@@ -63,8 +63,8 @@ function MovieScreen() {
             <div className="movie-details">
                 <div className="left-container">
                     <iframe
-                        width="800"
-                        height="500"
+                        width="650"
+                        height="400"
                         src={`https://www.youtube.com/embed/${videoId}`}
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen

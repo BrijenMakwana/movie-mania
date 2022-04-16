@@ -1,8 +1,6 @@
 .App {
   margin: 0;
-  padding: 10px;
-  background-color: #000 !important;
-
+  background-color: #000;
 }
 
 *{
