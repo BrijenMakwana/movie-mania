@@ -14,7 +14,7 @@ Access this site at [movie-mania-brijen.vercel.app](https://movie-mania-brijen.v
 
 ## About The App
 
-Movie Mania is a one stop search site for all movies and tv series. You can stay updated with all latest releases, upcoming releases and much more. It shows a well organized collection of movies and series. You can click on any show to get more details about the show like story plot, ratings, release date and duration of that show. You can also search for any specific movie. It also shows trailer which you can directly see in the site. It uses React Router 6 for navigation and axios for API calling.
+Movie Mania is a one stop search site for all movies and tv series. You can stay updated with all latest releases, upcoming releases and much more. It shows a well organised collection of movies and series. You can click on any show to get more details about the show like story plot, ratings, release date and duration of that show. You can also search for any specific movie. It also shows trailer which you can directly see in the site. It uses React Router 6 for navigation and axios for API calling.
 
 ## Screenshots
 
